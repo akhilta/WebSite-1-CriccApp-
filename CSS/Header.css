@@ -1,0 +1,44 @@
+.Sample__Header{
+    display: flex;
+    flex-direction:row;
+    background-color: rgb(70, 109, 109);
+    color: white;
+}
+.Header__Items{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    flex:3;
+}
+.Header__MainText{
+flex:1;
+align-self: center;
+padding-left: 10px;
+}
+.Header__Items .Header__Item{
+    /* flex:1; */
+    margin: 10px;
+    
+    padding: 0px;
+}
+.Header__Items .Header__Item a{
+   color: white;
+   text-decoration: none;
+}
+.Header__Items .Header__Item:hover{
+    box-sizing: border-box;
+    border:1px solid black;
+    background-color: #99d6ff;
+   
+ }
+ .Header__Items .Header__Item a:hover{
+   color: black;
+   
+ }
+
+@media (max-width: 400px) {
+.Sample__Header{
+    flex-direction: column;
+}
+
+}

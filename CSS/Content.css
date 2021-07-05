@@ -1,0 +1,113 @@
+.ContentSearchDivWrapper .ContentSearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+.ContentSearchDivWrapper .ContentSearch input{
+   border: none;
+   font-size: large;
+   text-align: center;
+   border-radius: 5px;
+  
+}
+@media(max-width:800px) and (min-width:400px){
+    .ContentSearchDivWrapper .ContentSearch{
+       
+    }
+    .ContentSearchDivWrapper .ContentSearch input{
+        font-size: medium;
+    }
+}
+  @media(max-width:400px){
+    .ContentSearchDivWrapper .ContentSearch{
+        justify-content: flex-end;
+    }
+    .ContentSearchDivWrapper .ContentSearch input{
+        font-size: medium;
+    }
+}
+/* Main Content styles */
+.ContentDivWrapper{
+    border:2px solid black;
+    height: 100%;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+.ContentWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+.ContentCard{
+    /* flex:1 0; */
+    /* border:1px solid blue; */
+    flex-basis: 220px;
+    height: 400px;
+    margin:10px;
+    position: relative;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,.5);
+    /* box-shadow: 0px 50px 100px 0px rgba(0,0,0,.5); */
+}
+.ContentCard .PlayerContentWrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.ContentCard .PlayerContentWrapper .PlayerImageContainer{
+    /* flex:4; */
+  
+    width:100%;
+    height:300px;
+}
+.ContentCard .PlayerContentWrapper .PlayerImageContainer img{
+    width: 100%;
+    height: 100%;
+}
+.ContentCard .PlayerContentWrapper .PlayerDetailsContainer{
+    /* flex:2; */
+    width:100%;
+    height:100px;
+  
+    /* overflow: scroll; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(71, 85, 80);
+    color: white;
+}
+.PlayerName{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    align-items: center;
+}
+.PlayerName__Child{
+    flex:1;
+}
+.PlayerName__PlayerNameValue{
+
+}
+.PlayerCountry{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    align-items: center;
+}
+
+/* Player Rating*/
+.Player_Rating{
+    position:absolute;
+    z-index: 200;
+    border:1px solid black;
+    background-color: aquamarine;
+    width:fit-content;
+    height: fit-content;
+    right: 0px;
+    padding:2px;
+    border-radius: 3px;
+    color: rgb(196, 25, 181);
+}

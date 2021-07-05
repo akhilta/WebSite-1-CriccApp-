@@ -1,0 +1,29 @@
+.Footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    background-color:rgb(159, 213, 223);
+    align-items: center;
+}
+.Footer_Child{
+    flex:1;
+}
+.Footer_DeveloperInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.Footer_DeveloperInfo_Image{
+flex:3;
+width:100%;
+padding-top:10px;
+}
+.Footer_DeveloperInfo_Image img{
+    border-radius: 50%;
+    height:200px;
+    width:inherit;
+}
+.Footer_DeveloperInfo_Details{
+flex:2;
+}
