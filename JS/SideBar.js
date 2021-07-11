@@ -1,5 +1,5 @@
-
-window.onload=()=>{
+const SideBarFunctionality=()=>{
+    console.log("In sideBar")
     const mobileOpenTag=document.querySelector('.openTagInMobile');
     const sideDivWrapper=document.querySelector('.SideDivWrapper');
     const sideBarContentWrapper=document.querySelector('.SideBarContentWrapper');
@@ -25,6 +25,24 @@ window.onload=()=>{
         sideDivWrapper.style.display='none';
     }
     );
+
+
+    // function reportWindowSize() {
+    //     console.log(window.innerHeight,window.innerWidth)
+    //     if(window.innerWidth >400){
+    //         console.log("here")
+    //         sideDivWrapper.style.position='relative';
+    //         sideDivWrapper.style.display='block';
+    //     }else{
+    //         console.log("Not There Here")
+    //         // sideDivWrapper.style.display='block';
+    //         // sideDivWrapper.style.position='absolute';
+    //         // // sideDivWrapper.style.height='100%';
+    //         // sideDivWrapper.style.left='0px';
+    //     }
+    //   }
+      
+    //   window.onresize = reportWindowSize;
 }
 
 

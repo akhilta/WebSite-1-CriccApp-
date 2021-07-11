@@ -1,7 +1,8 @@
 .Sample__Header{
     display: flex;
     flex-direction:row;
-    background-color: rgb(70, 109, 109);
+    background-color: #333;
+    background-color: rgb(3,89,70);
     color: white;
 }
 .Header__Items{
@@ -14,6 +15,7 @@
 flex:1;
 align-self: center;
 padding-left: 10px;
+font-weight: 300;
 }
 .Header__Items .Header__Item{
     /* flex:1; */
@@ -32,7 +34,7 @@ padding-left: 10px;
    
  }
  .Header__Items .Header__Item a:hover{
-   color: black;
+   color: white;
    
  }
 
@@ -40,5 +42,33 @@ padding-left: 10px;
 .Sample__Header{
     flex-direction: column;
 }
-
+.Header__MainText{
+    height: 80px;
 }
+}
+
+/* */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(3,89,70);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+    color: white;
+  }

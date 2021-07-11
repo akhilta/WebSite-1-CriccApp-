@@ -10,7 +10,9 @@
     <link href="../CSS/SideBar.css" rel="stylesheet" type="text/css" media="all">
     <link href="../CSS/Content.css" rel="stylesheet" type="text/css" media="all">
     <link href="../CSS/Footer.css" rel="stylesheet" type="text/css" media="all">
-    <script src="../JS/SideBar.js"></script>
+    <script src="../JS/SideBar.js" type="text/javascript" media="all"></script>
+    <script src="../JS/PlayersData.js" type="text/javascript" media="all"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -24,25 +26,27 @@
     </header>
     <div class="BodyTagWrapper">
         <div class="openTagInMobile">
-            <hr style="width:100%;text-align:left;margin-left:0">
-            <hr style="width:100%;text-align:left;margin-left:0">
-            <hr style="width:100%;text-align:left;margin-left:0">
+            <div class="hamberger"></div>
+            <div class="hamberger"></div>
+            <div class="hamberger"></div>
         </div>
         <div class="SideDivWrapper">
             <div class="CloseTagInMobile">
-                &les;
+                <div class="hamberger"></div>
+                <div class="hamberger"></div>
+                <div class="hamberger"></div>
             </div>
             <div class="SideBarContentWrapper">
                 <div class="SideBarContentItem">
-                    <input type="checkbox" id="bowler" name="bowler" value="bowler">
+                    <input type="checkbox" id="bowler" name="bowler" value="bowler" class="sideBarItem">
                     <label for="bowler"> Bowlers</label>
                 </div>
                 <div class="SideBarContentItem">
-                    <input type="checkbox" id="batsman" name="batsman" value="batsman">
+                    <input type="checkbox" id="batsman" name="batsman" value="batsman" class="sideBarItem">
                     <label for="batsman">Batsmen</label>
                 </div>
                 <div class="SideBarContentItem">
-                    <input type="checkbox" id="Allrounder" name="Allrounder" value="allRounder">
+                    <input type="checkbox" id="Allrounder" name="Allrounder" value="allRounder" class="sideBarItem">
                     <label for="Allrounder">Allrounders</label>
                 </div>
             </div>
@@ -50,197 +54,15 @@
         <div class="ContentDivWrapper">
             <div class="ContentSearchDivWrapper">
                 <div class="ContentSearch">
-                    <input type="search" placeholder="Search Player">
+                    <input type="search" placeholder="Search Player" class="SearchPlayer">
                 </div>
             </div>
             <div class="ContentWrapper">
-                <div class="ContentCard">
-                    <div class="Player_Rating"><strong>3 &#11088; </strong></div>
-                    <div class="PlayerContentWrapper">
-                        <div class="PlayerImageContainer">
-                            <img src="https://www.cricapi.com/playerpic/33757.jpg" alt="Image">
-                        </div>
-                        <div class="PlayerDetailsContainer">
-                            <div class="PlayerName">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">PlayerName</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Sachin Rana</em>
-                            </div>
-                            <div class="PlayerCountry">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">Country</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">India</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ContentCard">
-                    <div class="Player_Rating"><strong>5 &#11088; </strong></div>
-                    <div class="PlayerContentWrapper">
-                        <div class="PlayerImageContainer">
-                            <img src="https://www.cricapi.com/playerpic/35320.jpg" alt="Image">
-                        </div>
-                        <div class="PlayerDetailsContainer">
-                            <div class="PlayerName">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">PlayerName</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Sachin Tendulkar</em>
-                            </div>
-                            <div class="PlayerCountry">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">Country</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">India</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ContentCard">
-                    <div class="Player_Rating"><strong>3 &#11088; </strong></div>
-                    <div class="PlayerContentWrapper">
-                        <div class="PlayerImageContainer">
-                            <img src="https://www.cricapi.com/playerpic/359200.jpg" alt="Image">
-                        </div>
-                        <div class="PlayerDetailsContainer">
-                            <div class="PlayerName">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">PlayerName</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Madawa Warnapura</em>
-                            </div>
-                            <div class="PlayerCountry">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">Country</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Srilanka</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ContentCard">
-                    <div class="Player_Rating"><strong>4 &#11088; </strong></div>
-                    <div class="PlayerContentWrapper">
-                        <div class="PlayerImageContainer">
-                            <img src="https://www.cricapi.com/playerpic/424221.jpg" alt="Image">
-                        </div>
-                        <div class="PlayerDetailsContainer">
-                            <div class="PlayerName">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">PlayerName</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Akhil Reddy</em>
-                            </div>
-                            <div class="PlayerCountry">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">Country</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">India</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ContentCard">
-                    <div class="Player_Rating"><strong>3 &#11088; </strong></div>
-                    <div class="PlayerContentWrapper">
-                        <div class="PlayerImageContainer">
-                            <img src="https://www.cricapi.com/playerpic/33757.jpg" alt="Image">
-                        </div>
-                        <div class="PlayerDetailsContainer">
-                            <div class="PlayerName">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">PlayerName</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Sachin Rana</em>
-                            </div>
-                            <div class="PlayerCountry">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">Country</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">India</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ContentCard">
-                    <div class="Player_Rating"><strong>5 &#11088; </strong></div>
-                    <div class="PlayerContentWrapper">
-                        <div class="PlayerImageContainer">
-                            <img src="https://www.cricapi.com/playerpic/35320.jpg" alt="Image">
-                        </div>
-                        <div class="PlayerDetailsContainer">
-                            <div class="PlayerName">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">PlayerName</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Sachin Tendulkar</em>
-                            </div>
-                            <div class="PlayerCountry">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">Country</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">India</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ContentCard">
-                    <div class="Player_Rating"><strong>3 &#11088; </strong></div>
-                    <div class="PlayerContentWrapper">
-                        <div class="PlayerImageContainer">
-                            <img src="https://www.cricapi.com/playerpic/359200.jpg" alt="Image">
-                        </div>
-                        <div class="PlayerDetailsContainer">
-                            <div class="PlayerName">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">PlayerName</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Madawa Warnapura</em>
-                            </div>
-                            <div class="PlayerCountry">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">Country</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Srilanka</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ContentCard">
-                    <div class="Player_Rating"><strong>4 &#11088; </strong></div>
-                    <div class="PlayerContentWrapper">
-                        <div class="PlayerImageContainer">
-                            <img src="https://www.cricapi.com/playerpic/424221.jpg" alt="Image">
-                        </div>
-                        <div class="PlayerDetailsContainer">
-                            <div class="PlayerName">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">PlayerName</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Akhil Reddy</em>
-                            </div>
-                            <div class="PlayerCountry">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">Country</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">India</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ContentCard">
-                    <div class="Player_Rating"><strong>3 &#11088; </strong></div>
-                    <div class="PlayerContentWrapper">
-                        <div class="PlayerImageContainer">
-                            <img src="https://www.cricapi.com/playerpic/33757.jpg" alt="Image">
-                        </div>
-                        <div class="PlayerDetailsContainer">
-                            <div class="PlayerName">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">PlayerName</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">Sachin Rana</em>
-                            </div>
-                            <div class="PlayerCountry">
-                                <strong class="PlayerName__Child PlayerName__PlayerNameLabel">Country</strong>
-                                <em class="PlayerName__Child PlayerName__PlayerNameValue">India</em>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ContentCard">
-
-                </div>
-                <div class="ContentCard">
-
-                </div>
-                <div class="ContentCard">
-
-                </div>
-                <div class="ContentCard">
-
-                </div>
-                <div class="ContentCard">
-
-                </div>
-                <div class="ContentCard">
-
-                </div>
-                <div class="ContentCard">
-
-                </div>
+               
             </div>
         </div>
     </div>
-    <footer class="Footer">
+    <!-- <footer class="Footer">
         <div class="Footer_Child Footer_CopyRights">
             <strong>All &copy; Rights Approved From CricBuzz</strong>
         </div>
@@ -255,6 +77,60 @@
                 <img src="./PlayersData/Akhil.jpg">
             </div>
 
+        </div>
+    </footer> -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-ul">
+                        <li>
+                            <a href="#"> about us </a>
+                        </li>
+                        <li>
+                            <a href="#">our other stats </a>
+                        </li>
+                        <li>
+                            <a href="#">privacy policy </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>getHelp</h4>
+                    <ul class="footer-ul">
+                        <li>
+                            <a href="#"> FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#"> Post</a>
+                        </li>
+                        <li>
+                            <a href="#">Phone</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="socialMediaLinks">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                       
+                       
+                </div>
+            </div>
         </div>
     </footer>
 </body>

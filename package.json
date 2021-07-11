@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cricketApp": "nodemon App.js"
+    "cricketApp": "nodemon App.js",
+    "practiseJs":"nodemon ./JS/Oop.js"
   },
   "keywords": [],
   "author": "",

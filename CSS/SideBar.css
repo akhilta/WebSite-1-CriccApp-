@@ -1,9 +1,8 @@
 
 .SideDivWrapper{
-   background-color: rgb(20, 183, 204);
+   background-color: #042331;
    color: white;
    position: relative;
-  
    z-index: 100;
 }
 
@@ -11,12 +10,19 @@
 cursor: pointer;
 position:absolute;
 right:0px;
-width:20px;
+width:35px;
 height: 30px;
-background-color: bisque;
+background-color: black;
 color: black;
 visibility: hidden;
 z-index: 300;
+}
+
+.CloseTagInMobile .hamberger{
+  width: 35px;
+  height: 5px;
+  background-color: rgb(217, 223, 222);
+  margin: 6px 0;
 }
 .SideBarContentWrapper{
     display: flex;
@@ -34,7 +40,7 @@ z-index: 300;
   
 }
 .SideBarContentItem label{
-   font-size: x-large;
+   font-size: large;
  } 
 
  .SideBarContentItem input{
@@ -56,3 +62,15 @@ z-index: 300;
     }
   }
   
+  .SideBarContentItem input[type="checkbox"]{
+    /* width:20px;
+    height:20px;
+    align-items: center; */
+  }
+
+  .SideBarContentItem label{
+    margin-left: 10px;
+  }
+  .SideBarContentItem{
+    margin-top:10px;
+  }
